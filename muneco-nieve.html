@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muñeco de nieve · Práctica de Graficación</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar" aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Graficación <span>p5.js</span></a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <button class="dropdown-btn active" aria-expanded="false">Dibujos ▾</button>
+          <ul class="dropdown-menu">
+            <li><a href="rana.html">Rana</a></li>
+            <li><a href="dientes-conejo.html">Dientes de conejo</a></li>
+            <li><a href="cena.html">¿Qué hay de cena?</a></li>
+            <li><a href="dia-nevado.html">Día nevado soleado</a></li>
+            <li><a href="muneco-nieve.html" class="active">Muñeco de nieve</a></li>
+          </ul>
+        </li>
+        <li><a href="canvas.html">Etiqueta &lt;canvas&gt;</a></li>
+        <li><a href="p5js.html">Fundamentos p5.js</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <section class="hero">
+      <h1>Muñeco de nieve</h1>
+      <p>Un muñeco de nieve que saluda en una noche estrellada.</p>
+    </section>
+
+    <div class="sketch-layout">
+      <div id="canvas-container"><!-- p5.js crea aquí el lienzo --></div>
+
+      <div class="info-box">
+        <h2>Descripción</h2>
+        <p>Muñeco de nieve formado por tres círculos, con sombrero de copa, bufanda, nariz de zanahoria y brazos de rama que se mueven, en una noche con luna y estrellas que titilan.</p>
+        <h2>Técnicas de p5.js utilizadas</h2>
+        <ul>
+            <li>Tres <code>ellipse()</code> superpuestas para el cuerpo</li>
+            <li><code>rotate()</code> con <code>sin(frameCount)</code> para mover los brazos</li>
+            <li>Transparencia (canal alfa) para el titilar de las estrellas</li>
+            <li>Operador ternario con <code>mouseIsPressed</code></li>
+        </ul>
+        <div class="hint">Mantén presionado el ratón sobre el lienzo para que el muñeco salude más rápido y levante el sombrero.</div>
+      </div>
+    </div>
+
+    <details class="code-view">
+      <summary>Ver código fuente (js/sketches/muneco-nieve.js)</summary>
+      <pre><code data-code-src="js/sketches/muneco-nieve.js">Cargando…</code></pre>
+    </details>
+
+    <nav class="pager" aria-label="Navegación entre dibujos">
+      <a href="dia-nevado.html">← Día nevado soleado</a>
+      <a href="rana.html">Rana →</a>
+    </nav>
+  </main>
+
+  <footer>
+    Práctica de Laboratorio · Despliegue de gráficos · Dibujos adaptados de los retos de Khan Academy a HTML, CSS, JavaScript y p5.js
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="lib/p5.js"></script>
+  <script src="js/sketches/muneco-nieve.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rana · Práctica de Graficación</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar" aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Graficación <span>p5.js</span></a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <button class="dropdown-btn active" aria-expanded="false">Dibujos ▾</button>
+          <ul class="dropdown-menu">
+            <li><a href="rana.html" class="active">Rana</a></li>
+            <li><a href="dientes-conejo.html">Dientes de conejo</a></li>
+            <li><a href="cena.html">¿Qué hay de cena?</a></li>
+            <li><a href="dia-nevado.html">Día nevado soleado</a></li>
+            <li><a href="muneco-nieve.html">Muñeco de nieve</a></li>
+          </ul>
+        </li>
+        <li><a href="canvas.html">Etiqueta &lt;canvas&gt;</a></li>
+        <li><a href="p5js.html">Fundamentos p5.js</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <section class="hero">
+      <h1>Rana</h1>
+      <p>Una rana sobre un nenúfar que sigue con la mirada a una mosca.</p>
+    </section>
+
+    <div class="sketch-layout">
+      <div id="canvas-container"><!-- p5.js crea aquí el lienzo --></div>
+
+      <div class="info-box">
+        <h2>Descripción</h2>
+        <p>Rana sentada sobre un nenúfar en medio de un estanque. Se construye con elipses para el cuerpo, la cabeza y los ojos saltones, y con <code>arc()</code> en modo <code>PIE</code> para la hoja con su corte característico.</p>
+        <h2>Técnicas de p5.js utilizadas</h2>
+        <ul>
+            <li><code>ellipse()</code> y <code>arc()</code> para formas orgánicas</li>
+            <li>Funciones propias: <code>dibujarPupila()</code> y <code>dibujarMosca()</code></li>
+            <li><code>atan2()</code>, <code>cos()</code> y <code>sin()</code> para que las pupilas sigan al ratón</li>
+            <li><code>mouseIsPressed</code> para sacar la lengua</li>
+        </ul>
+        <div class="hint">Mueve el ratón: la mosca te sigue y la rana la mira. Haz clic (o mantén presionado) para que la rana saque la lengua.</div>
+      </div>
+    </div>
+
+    <details class="code-view">
+      <summary>Ver código fuente (js/sketches/rana.js)</summary>
+      <pre><code data-code-src="js/sketches/rana.js">Cargando…</code></pre>
+    </details>
+
+    <nav class="pager" aria-label="Navegación entre dibujos">
+      <a href="muneco-nieve.html">← Muñeco de nieve</a>
+      <a href="dientes-conejo.html">Dientes de conejo →</a>
+    </nav>
+  </main>
+
+  <footer>
+    Práctica de Laboratorio · Despliegue de gráficos · Dibujos adaptados de los retos de Khan Academy a HTML, CSS, JavaScript y p5.js
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="lib/p5.js"></script>
+  <script src="js/sketches/rana.js"></script>
+</body>
+</html>
