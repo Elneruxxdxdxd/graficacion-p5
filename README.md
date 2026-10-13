@@ -10,4 +10,4 @@ Sitio web que reúne los dibujos de los retos de Khan Academy adaptados a HTML, 
 - `js/sketches/` — código p5.js de cada dibujo · `lib/p5.js` — librería p5.js v1.11
 
 ## Publicación
-Sitio publicado con GitHub Pages (Settings → Pages → Deploy from branch → `main` / root).
+Sitio publicado con GitHub Pages: https://elneruxxdxdxd.github.io/graficacion-p5/
