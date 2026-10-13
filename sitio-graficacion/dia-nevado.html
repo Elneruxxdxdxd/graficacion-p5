@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Día nevado soleado · Práctica de Graficación</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar" aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Graficación <span>p5.js</span></a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <button class="dropdown-btn active" aria-expanded="false">Dibujos ▾</button>
+          <ul class="dropdown-menu">
+            <li><a href="rana.html">Rana</a></li>
+            <li><a href="dientes-conejo.html">Dientes de conejo</a></li>
+            <li><a href="cena.html">¿Qué hay de cena?</a></li>
+            <li><a href="dia-nevado.html" class="active">Día nevado soleado</a></li>
+            <li><a href="muneco-nieve.html">Muñeco de nieve</a></li>
+          </ul>
+        </li>
+        <li><a href="canvas.html">Etiqueta &lt;canvas&gt;</a></li>
+        <li><a href="p5js.html">Fundamentos p5.js</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <section class="hero">
+      <h1>Día nevado soleado</h1>
+      <p>Paisaje invernal con sol giratorio, nubes y nieve que cae.</p>
+    </section>
+
+    <div class="sketch-layout">
+      <div id="canvas-container"><!-- p5.js crea aquí el lienzo --></div>
+
+      <div class="info-box">
+        <h2>Descripción</h2>
+        <p>Paisaje de invierno con montañas, una casa con chimenea, un pino nevado y un sol brillante. La escena está animada: el sol gira, las nubes avanzan y cae la nieve.</p>
+        <h2>Técnicas de p5.js utilizadas</h2>
+        <ul>
+            <li>Arreglo de objetos (<code>copos</code>) con posición, tamaño y velocidad</li>
+            <li><code>random()</code> para generar los copos en <code>setup()</code></li>
+            <li><code>push()</code>, <code>translate()</code>, <code>rotate()</code> y <code>pop()</code> para los rayos del sol</li>
+            <li>Ciclo <code>for</code> y operador <code>%</code> para reiniciar posiciones</li>
+        </ul>
+        <div class="hint">Animación continua: observa el sol, las nubes, el humo de la chimenea y la nieve.</div>
+      </div>
+    </div>
+
+    <details class="code-view">
+      <summary>Ver código fuente (js/sketches/dia-nevado.js)</summary>
+      <pre><code data-code-src="js/sketches/dia-nevado.js">Cargando…</code></pre>
+    </details>
+
+    <nav class="pager" aria-label="Navegación entre dibujos">
+      <a href="cena.html">← ¿Qué hay de cena?</a>
+      <a href="muneco-nieve.html">Muñeco de nieve →</a>
+    </nav>
+  </main>
+
+  <footer>
+    Práctica de Laboratorio · Despliegue de gráficos · Dibujos adaptados de los retos de Khan Academy a HTML, CSS, JavaScript y p5.js
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="lib/p5.js"></script>
+  <script src="js/sketches/dia-nevado.js"></script>
+</body>
+</html>

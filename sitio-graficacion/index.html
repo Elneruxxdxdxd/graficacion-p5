@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio · Práctica de Graficación</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar" aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Graficación <span>p5.js</span></a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li class="dropdown">
+          <button class="dropdown-btn" aria-expanded="false">Dibujos ▾</button>
+          <ul class="dropdown-menu">
+            <li><a href="rana.html">Rana</a></li>
+            <li><a href="dientes-conejo.html">Dientes de conejo</a></li>
+            <li><a href="cena.html">¿Qué hay de cena?</a></li>
+            <li><a href="dia-nevado.html">Día nevado soleado</a></li>
+            <li><a href="muneco-nieve.html">Muñeco de nieve</a></li>
+          </ul>
+        </li>
+        <li><a href="canvas.html">Etiqueta &lt;canvas&gt;</a></li>
+        <li><a href="p5js.html">Fundamentos p5.js</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <section class="hero">
+      <h1>Práctica de Laboratorio: Composición Gráfica</h1>
+      <p>Representación de objetos mediante primitivas 2D. Los dibujos desarrollados en el simulador de Khan Academy (ProcessingJS) se adaptaron a código web estándar con HTML, CSS, JavaScript y la librería p5.js.</p>
+    </section>
+
+    <h2 class="section-title">Galería de dibujos</h2>
+    <div class="grid">
+      <a class="card" href="rana.html">
+        <img src="img/rana.png" alt="Vista previa: Rana" loading="lazy">
+        <div class="card-body">
+          <h3>Rana</h3>
+          <p>Una rana sobre un nenúfar que sigue con la mirada a una mosca.</p>
+        </div>
+      </a>
+      <a class="card" href="dientes-conejo.html">
+        <img src="img/dientes-conejo.png" alt="Vista previa: Dientes de conejo" loading="lazy">
+        <div class="card-body">
+          <h3>Dientes de conejo</h3>
+          <p>Un conejo cuyos dientes crecen según la posición del ratón.</p>
+        </div>
+      </a>
+      <a class="card" href="cena.html">
+        <img src="img/cena.png" alt="Vista previa: ¿Qué hay de cena?" loading="lazy">
+        <div class="card-body">
+          <h3>¿Qué hay de cena?</h3>
+          <p>Una pizza de pepperoni con champiñones, aceitunas y albahaca.</p>
+        </div>
+      </a>
+      <a class="card" href="dia-nevado.html">
+        <img src="img/dia-nevado.png" alt="Vista previa: Día nevado soleado" loading="lazy">
+        <div class="card-body">
+          <h3>Día nevado soleado</h3>
+          <p>Paisaje invernal con sol giratorio, nubes y nieve que cae.</p>
+        </div>
+      </a>
+      <a class="card" href="muneco-nieve.html">
+        <img src="img/muneco-nieve.png" alt="Vista previa: Muñeco de nieve" loading="lazy">
+        <div class="card-body">
+          <h3>Muñeco de nieve</h3>
+          <p>Un muñeco de nieve que saluda en una noche estrellada.</p>
+        </div>
+      </a>
+    </div>
+
+    <h2 class="section-title">Sección informativa</h2>
+    <div class="grid">
+      <a class="card theory" href="canvas.html">
+        <div class="card-body">
+          <span class="tag">&lt;canvas&gt;</span>
+          <h3>La etiqueta canvas y el contexto 2D</h3>
+          <p>Qué es el lienzo de HTML5, cómo se obtiene su contexto de renderizado y cómo se dibuja con el API nativo de JavaScript.</p>
+        </div>
+      </a>
+      <a class="card theory" href="p5js.html">
+        <div class="card-body">
+          <span class="tag">p5.js</span>
+          <h3>Fundamentos de p5.js</h3>
+          <p>Estructura de un sketch, primitivas, color, animación, interacción con el ratón y diferencias con Khan Academy.</p>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    Práctica de Laboratorio · Despliegue de gráficos · Dibujos adaptados de los retos de Khan Academy a HTML, CSS, JavaScript y p5.js
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
