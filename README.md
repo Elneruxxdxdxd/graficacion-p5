@@ -1,5 +1,5 @@
 # Práctica de Graficación — Despliegue de gráficos con p5.js
-
+#Manuel Garcia Montes
 Sitio web que reúne los dibujos de los retos de Khan Academy adaptados a HTML, CSS, JavaScript y p5.js.
 
 ## Contenido
