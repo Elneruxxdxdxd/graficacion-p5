@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estrella fugaz · Práctica de Graficación</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar" aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Graficación <span>p5.js</span></a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <button class="dropdown-btn active" aria-expanded="false">Dibujos ▾</button>
+          <ul class="dropdown-menu">
+            <li><a href="rana.html">Rana</a></li>
+            <li><a href="dientes-conejo.html">Dientes de conejo</a></li>
+            <li><a href="cena.html">¿Qué hay de cena?</a></li>
+            <li><a href="dia-nevado.html">Día nevado soleado</a></li>
+            <li><a href="muneco-nieve.html">Muñeco de nieve</a></li>
+            <li><a href="sol-explota.html">El sol que explota</a></li>
+            <li><a href="nubes-separan.html">Nubes que se separan</a></li>
+            <li><a href="estrella-fugaz.html" class="active">Estrella fugaz</a></li>
+          </ul>
+        </li>
+        <li><a href="canvas.html">Etiqueta &lt;canvas&gt;</a></li>
+        <li><a href="p5js.html">Fundamentos p5.js</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <section class="hero">
+      <h1>Estrella fugaz</h1>
+      <p>Dos estrellas cruzan el cielo nocturno, crecen y se desvanecen.</p>
+    </section>
+
+    <div class="sketch-layout">
+      <div id="canvas-container"><!-- p5.js crea aquí el lienzo --></div>
+
+      <div class="info-box">
+        <h2>Descripción</h2>
+        <p>Cielo nocturno donde dos estrellas parten de las esquinas inferiores y suben en diagonal. Mientras avanzan crecen de tamaño y sus componentes de color se reducen poco a poco hasta desaparecer.</p>
+        <h2>Técnicas de p5.js utilizadas</h2>
+        <ul>
+            <li>Operadores <code>*=</code> y <code>/=</code> para un movimiento acelerado</li>
+            <li>Color dinámico con variables RGB y transparencia (alfa)</li>
+            <li><code>background()</code> semitransparente para dejar un rastro</li>
+            <li><code>mousePressed()</code> para lanzar las estrellas de nuevo</li>
+        </ul>
+        <div class="hint">Las estrellas pasan muy rápido: haz clic sobre el lienzo para lanzarlas otra vez.</div>
+      </div>
+    </div>
+
+    <details class="code-view">
+      <summary>Ver código fuente (js/sketches/estrella-fugaz.js)</summary>
+      <pre><code data-code-src="js/sketches/estrella-fugaz.js">Cargando…</code></pre>
+    </details>
+
+    <nav class="pager" aria-label="Navegación entre dibujos">
+      <a href="nubes-separan.html">← Nubes que se separan</a>
+      <a href="rana.html">Rana →</a>
+    </nav>
+  </main>
+
+  <footer>
+    Práctica de Laboratorio · Despliegue de gráficos · Dibujos adaptados de los retos de Khan Academy a HTML, CSS, JavaScript y p5.js
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="lib/p5.js"></script>
+  <script src="js/sketches/estrella-fugaz.js"></script>
+</body>
+</html>
