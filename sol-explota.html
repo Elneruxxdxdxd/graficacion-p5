@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El sol que explota · Práctica de Graficación</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar" aria-label="Navegación principal">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Graficación <span>p5.js</span></a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li class="dropdown">
+          <button class="dropdown-btn active" aria-expanded="false">Dibujos ▾</button>
+          <ul class="dropdown-menu">
+            <li><a href="rana.html">Rana</a></li>
+            <li><a href="dientes-conejo.html">Dientes de conejo</a></li>
+            <li><a href="cena.html">¿Qué hay de cena?</a></li>
+            <li><a href="dia-nevado.html">Día nevado soleado</a></li>
+            <li><a href="muneco-nieve.html">Muñeco de nieve</a></li>
+            <li><a href="sol-explota.html" class="active">El sol que explota</a></li>
+            <li><a href="nubes-separan.html">Nubes que se separan</a></li>
+            <li><a href="estrella-fugaz.html">Estrella fugaz</a></li>
+          </ul>
+        </li>
+        <li><a href="canvas.html">Etiqueta &lt;canvas&gt;</a></li>
+        <li><a href="p5js.html">Fundamentos p5.js</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="page">
+    <section class="hero">
+      <h1>El sol que explota</h1>
+      <p>Un sol que crece sin parar en el horizonte hasta cubrir todo el cielo.</p>
+    </section>
+
+    <div class="sketch-layout">
+      <div id="canvas-container"><!-- p5.js crea aquí el lienzo --></div>
+
+      <div class="info-box">
+        <h2>Descripción</h2>
+        <p>Paisaje con cielo azul y pasto verde. El sol nace como un círculo pequeño a la mitad del horizonte y su tamaño aumenta en cada fotograma; el rectángulo del pasto se dibuja después para tapar la mitad inferior del sol.</p>
+        <h2>Técnicas de p5.js utilizadas</h2>
+        <ul>
+            <li>Variable global <code>sunSize</code> que se incrementa en <code>draw()</code></li>
+            <li><code>ellipse()</code> para el sol y <code>rect()</code> para el pasto</li>
+            <li>Orden de dibujo: lo último que se dibuja queda encima</li>
+            <li><code>mousePressed()</code> para reiniciar la animación</li>
+        </ul>
+        <div class="hint">Observa cómo crece el sol. Haz clic sobre el lienzo para reiniciar.</div>
+      </div>
+    </div>
+
+    <details class="code-view">
+      <summary>Ver código fuente (js/sketches/sol-explota.js)</summary>
+      <pre><code data-code-src="js/sketches/sol-explota.js">Cargando…</code></pre>
+    </details>
+
+    <nav class="pager" aria-label="Navegación entre dibujos">
+      <a href="muneco-nieve.html">← Muñeco de nieve</a>
+      <a href="nubes-separan.html">Nubes que se separan →</a>
+    </nav>
+  </main>
+
+  <footer>
+    Práctica de Laboratorio · Despliegue de gráficos · Dibujos adaptados de los retos de Khan Academy a HTML, CSS, JavaScript y p5.js
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="lib/p5.js"></script>
+  <script src="js/sketches/sol-explota.js"></script>
+</body>
+</html>
