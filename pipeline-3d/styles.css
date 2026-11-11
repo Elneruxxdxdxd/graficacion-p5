@@ -1,0 +1,155 @@
+/* ============================================================
+   Paleta propia "Atardecer neón"
+   ============================================================ */
+:root {
+    --fondo: #0d0717;
+    --superficie: #1a1033;
+    --borde: #3b2a5c;
+    --acento: #f59e0b;       /* ámbar */
+    --acento-2: #a78bfa;     /* lavanda */
+    --texto: #f5f3ff;
+    --texto-suave: #c4b5fd;
+}
+
+/* Configuración general del lienzo y página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at 30% 20%, #2a1250 0%, var(--fondo) 60%);
+    min-height: 100vh;
+    color: var(--texto);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+#canvas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.volver {
+    align-self: flex-start;
+    color: var(--texto-suave);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.volver:hover { color: var(--acento); }
+
+canvas {
+    background: linear-gradient(160deg, #1a1033 0%, #120a24 100%);
+    border: 2px solid var(--acento);
+    border-radius: 14px;
+    box-shadow: 0 0 30px rgba(245, 158, 11, 0.25), 0 10px 25px rgba(0, 0, 0, 0.6);
+    max-width: 100%;
+}
+
+/* Selector de figuras */
+.selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.btn-figura, .btn-auto {
+    background: var(--superficie);
+    color: var(--texto);
+    border: 1px solid var(--borde);
+    border-radius: 999px;
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.btn-figura:hover, .btn-auto:hover {
+    border-color: var(--acento-2);
+}
+.btn-figura.activo {
+    background: var(--acento-2);
+    color: #1a1033;
+    border-color: var(--acento-2);
+    font-weight: bold;
+}
+
+/* Reto: auto-rotación */
+.auto-rotacion {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btn-auto {
+    background: var(--acento);
+    color: #1a1033;
+    border-color: var(--acento);
+    font-weight: bold;
+}
+.btn-auto.activo {
+    background: #ef4444;
+    border-color: #ef4444;
+    color: #fff;
+}
+.vel-label {
+    flex-direction: column;
+    min-width: 180px;
+}
+
+/* Panel de control flotante */
+.panel {
+    background-color: var(--superficie);
+    padding: 20px;
+    border-radius: 14px;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--borde);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+h2 {
+    margin-top: 0;
+    color: var(--acento);
+    font-size: 1.2rem;
+}
+
+h3 {
+    color: var(--acento-2);
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    border-bottom: 1px solid var(--borde);
+    padding-bottom: 3px;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 0.85rem;
+    color: var(--texto-suave);
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type=range] {
+    width: 100%;
+    margin-top: 4px;
+    accent-color: var(--acento);
+}
+
+.val {
+    color: var(--acento);
+    font-weight: bold;
+}

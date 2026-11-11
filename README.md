@@ -8,6 +8,7 @@ Sitio web que reúne los dibujos de los retos de Khan Academy adaptados a HTML, 
 - Teoría: `canvas.html` (etiqueta `<canvas>` y contexto 2D) y `p5js.html` (fundamentos de p5.js)
 - `css/styles.css` — estilos · `js/main.js` — menú y visor de código
 - `js/sketches/` — código p5.js de cada dibujo · `lib/p5.js` — librería p5.js v1.11
+- `pipeline-3d/` — Unidad 3: análisis del pipeline 3D y nuevas primitivas (pirámide, prisma triangular, octaedro) en Canvas HTML5 (`index.html`, `styles.css`, `script.js`)
 
 ## Publicación
 Sitio publicado con GitHub Pages: https://elneruxxdxdxd.github.io/graficacion-p5/
